@@ -1,0 +1,11 @@
+edu.gdpu.myssm.handler.ConfigurationHandler
+edu.gdpu.myssm.handler.BeanHandler
+edu.gdpu.myssm.handler.ValueHandler
+edu.gdpu.myssm.handler.ResourceHandler
+edu.gdpu.myssm.handler.ComponentHandler
+edu.gdpu.myssm.handler.ControllerHandler
+edu.gdpu.myssm.handler.ServiceHandler
+edu.gdpu.myssm.handler.RepositoryHandler
+edu.gdpu.myssm.handler.AutoWiredHandler
+edu.gdpu.myssm.handler.AspectHandler
+edu.gdpu.myssm.handler.UseAspectHandler

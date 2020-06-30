@@ -4,7 +4,6 @@ import edu.gdpu.myssm.utils.PropertiesUtils;
 import edu.gdpu.myssm.utils.ResourceUtils;
 import org.junit.Test;
 
-import java.io.InputStream;
 import java.util.Properties;
 
 /**

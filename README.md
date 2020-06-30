@@ -5,7 +5,13 @@
 
 于是就动手造一个极简版，能实现简单ssm功能的框架当作业交了顺便练习
 
-目前仅写完至Spring的IOC和AOP功能(大佬勿喷....)
+目前仅写完至
+
+Spring的IOC,AOP及简单的事务功能
+
+Mybatis(未加缓存)
+
+(大佬勿喷....)
 ## 环境依赖
 编译Jar版本:JDK8
 
@@ -90,6 +96,9 @@ public class TestApplication {
 @Component @Controller @Service @Repository @AutoWired
 
 @Configuration @Bean @Value
+
+@Transaction
+
 #### Ioc Demo 
 正常像Spring注解版使用即可
 
@@ -171,20 +180,174 @@ public class HelloServiceImpl implements HelloService{
 
 exclude传入排除增强的方法名
 
+#### 事务Demo
+
+在类上增加注解@Transaction
+
+```java
+/**
+ * @author 嘿 林梓鸿
+ * @date 2020年 06月26日 12:25:32
+ */
+@Service
+@Transaction(exclude = {"test1"})
+public class AccountServiceImpl implements AccountService {
+
+    @AutoWired
+    private AccountDao accountDao;
+
+    @Override
+    public void test() {
+        Account account = new Account();
+        account.setMoney(1500);
+        account.setName("张三");
+        Account account1 = new Account();
+        account1.setMoney(1500);
+        account1.setName("李四");
+
+        accountDao.update(account);
+        int a = 10/0;
+        accountDao.update(account1);
+
+    }
+
+    @Override
+    public void test1() {
+        Account account = new Account();
+        account.setMoney(1000);
+        account.setName("张三");
+        Account account1 = new Account();
+        account1.setMoney(2000);
+        account1.setName("李四");
+
+        accountDao.update(account);
+        int a = 10/0;
+        accountDao.update(account1);
+
+    }
+}
+```
+
+
 #### 如何自定义注解及其处理器
 
 仅支持位于类上的注解
 
 1. 自定义处理器 命名格式为 注解名+Handler并实现AnnotationHandler接口
-2. 在Jar包下的handlers.txt里添加处理器全类名即可
+2. 在resource目录下建立handlers.txt文件。添加处理器全类名即可
 3. 传入的Object 强转为Class对象即可
 
 #### 如何自定义监听器
 
 1. 自定义监听器 实现ApplicationListener接口
-2. 在Jar包下的listener.txt里添加监听器全类名
+2. 在resource目录下建立listener.txt。添加监听器全类名
 
+### mybatis
 
+#### config的Demo
+
+```java
+/**
+ * @author 嘿 林梓鸿
+ * @date 2020年 06月23日 15:52:52
+ */
+@Configuration
+@Resource
+public class DruidConfig {
+
+    @Value("${mysql.url}")
+    private String url;
+
+    @Value("${mysql.user}")
+    private String user;
+
+    @Value("${mysql.password}")
+    private String password;
+
+    /**
+     * 要扫描的包
+     * @return
+     */
+    @Bean
+    public MapperScanConfig mapperScanConfig(){
+        MapperScanConfig mapperScanConfig = new MapperScanConfig();
+        mapperScanConfig.setPackageName("edu.gdpu.myssm.mybatis.test");
+        return mapperScanConfig;
+    }
+
+    /**
+     * 必须注入
+     * @return
+     */
+    @Bean
+    public DaoConfiguration daoConfiguration(){
+        DaoConfiguration daoConfiguration = new DaoConfiguration(new Environment(druidDataSource()));
+        daoConfiguration.setMapperScanConfig(mapperScanConfig());
+        return daoConfiguration;
+    }
+
+    public DataSource druidDataSource(){
+        DruidDataSource dataSource = new DruidDataSource();
+        dataSource.setUrl(url);
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setUsername(user);
+        dataSource.setPassword(password);
+        return dataSource;
+    }
+}
+```
+
+#### 接口Demo
+
+```java
+/**
+ * @author 嘿 林梓鸿
+ * @date 2020年 06月25日 17:29:12
+ */
+@Repository
+public interface AccountDao {
+
+    @Select("select * from account")
+    List<Account> findAll();
+
+    @Update("update account set money = #{money} where name = #{name}")
+    int update(Account account);
+
+    @Insert("insert into account(name,money) values (#{name},#{money})")
+    int insert(Account account);
+
+    @Delete("delete from account where id = #{id}")
+    int delete(int id);
+}
+```
+
+#### 单元测试获取代理对象Demo
+
+```java
+/**
+ * @author 嘿 林梓鸿
+ * @date 2020年 06月25日 17:26:04
+ */
+public class MapperTest {
+
+    @Test
+    public void test(){
+        Application.run(TestApplication.class);
+        DaoConfiguration config = ApplicationContext.getApplicationContext().getBean(DaoConfiguration.class);
+        SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
+        SqlSessionFactory factory = builder.build(config);
+        SqlSession sqlSession = factory.openSqlSession();
+        AccountDao accountDao = sqlSession.getMapper(AccountDao.class);
+//        Account account = new Account();
+//        account.setMoney(2000);
+//        account.setName("王五");
+//        accountDao.delete(3);
+        accountDao.delete(3);
+        List<Account> all = accountDao.findAll();
+        System.out.println(all);
+    }
+}
+```
 
 
 

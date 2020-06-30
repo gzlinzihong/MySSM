@@ -1,7 +1,8 @@
 package edu.gdpu.myssm.utils;
 
-import edu.gdpu.myssm.ApplicationContext;
-import edu.gdpu.myssm.exception.KeyExistedException;
+import edu.gdpu.myssm.spring.ApplicationContext;
+import edu.gdpu.myssm.spring.InterfaceObject;
+import edu.gdpu.myssm.spring.exception.KeyExistedException;
 
 import java.util.Map;
 
@@ -13,13 +14,17 @@ public class BeanUtils {
 
     public static Object putBean(String key,Object value){
         Map<String, Object> beans = ApplicationContext.getApplicationContext().getBeans();
+        Map<Class, String> mapping = ApplicationContext.getApplicationContext().getMapping();
         if(beans.containsKey(key)){
-            try {
-                throw new KeyExistedException("该bean已存在");
-            } catch (KeyExistedException e) {
-                e.printStackTrace();
+            if(!(beans.get(key) instanceof InterfaceObject)){
+                try {
+                    throw new KeyExistedException("该bean已存在");
+                } catch (KeyExistedException e) {
+                    e.printStackTrace();
+                }
             }
         }else {
+            mapping.put(value.getClass(),key);
             return beans.put(key,value);
         }
         return beans.put(key,value);

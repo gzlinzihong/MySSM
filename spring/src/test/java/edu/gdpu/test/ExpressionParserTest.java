@@ -1,6 +1,6 @@
 package edu.gdpu.test;
 
-import edu.gdpu.myssm.exception.ParseExpressionException;
+import edu.gdpu.myssm.spring.exception.ParseExpressionException;
 import edu.gdpu.myssm.utils.ExpressionParser;
 import org.junit.Test;
 

@@ -1,8 +1,9 @@
 package edu.gdpu;
 
-import edu.gdpu.myssm.Application;
-import edu.gdpu.myssm.ApplicationContext;
-import edu.gdpu.myssm.controller.HelloController;
+import edu.gdpu.myssm.mybatis.test.AccountService;
+import edu.gdpu.myssm.mybatis.test.AccountServiceImpl;
+import edu.gdpu.myssm.spring.Application;
+import edu.gdpu.myssm.spring.ApplicationContext;
 
 /**
  * @author 嘿 林梓鸿
@@ -10,9 +11,10 @@ import edu.gdpu.myssm.controller.HelloController;
  */
 public class TestApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Application.run(TestApplication.class);
-        HelloController hellocontroller = (HelloController) ApplicationContext.getApplicationContext().getBeans().get("hellocontroller");
-        hellocontroller.ha();
+        AccountService accountServiceImpl = ApplicationContext.getApplicationContext().getBean(AccountServiceImpl.class);
+        accountServiceImpl.test();
+        accountServiceImpl.test1();
     }
 }

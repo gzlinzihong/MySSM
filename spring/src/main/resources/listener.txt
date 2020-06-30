@@ -1,1 +1,1 @@
-edu.gdpu.myssm.ApplicationListenerImpl
+edu.gdpu.myssm.spring.ApplicationListenerImpl

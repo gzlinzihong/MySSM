@@ -4,7 +4,7 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+12-b304.56"/>
     <property name="sun.boot.library.path" value="D:\IDEA\IntelliJ IDEA 2019.2.2\jbr\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\MySSM\spring"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\MySSM"/>
     <property name="java.vm.vendor" value="JetBrains s.r.o"/>
     <property name="java.vendor.url" value="https://www.jetbrains.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\MySSM\spring"/>
+    <property name="user.dir" value="D:\MySSM"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.3+12-b304.56"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -47,7 +47,7 @@
     <property name="idea.version2019.2.2" value="true"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.2.2 -s D:\maven\conf\settings.xml -Dmaven.repo.local=D:\maven_local_repository package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.2.2 -s D:\maven\conf\settings.xml -Dmaven.repo.local=D:\maven_local_repository install"/>
     <property name="java.home" value="D:\IDEA\IntelliJ IDEA 2019.2.2\jbr"/>
     <property name="user.language" value="zh"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>

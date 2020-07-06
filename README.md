@@ -34,22 +34,43 @@ SpringMVC(静态资源访问，视图解析，拦截器，Controller)
     <dependency>
       <groupId>org.apache.tomcat.embed</groupId>
       <artifactId>tomcat-embed-core</artifactId>
-      <version>9.0.30</version>
+      <version>9.0.35</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+
+
+
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>${slf4j.version}</version>
     </dependency>
+
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-core</artifactId>
       <version>${logback.version}</version>
     </dependency>
+
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>${logback.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.1.18</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.18</version>
     </dependency>
   </dependencies>
 ```
@@ -61,7 +82,7 @@ SpringMVC(静态资源访问，视图解析，拦截器，Controller)
         <dependency>
             <groupId>edu.gdpu</groupId>
             <artifactId>spring</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
 ```
 

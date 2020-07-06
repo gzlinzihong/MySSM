@@ -2,142 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27b87948-db78-4338-b5f3-493b6d8b2254" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/debug/ORM_DEBUG-2020-06-23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error/ORM_ERROR-2020-06-23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info/ORM_INFO-2020-06-23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/warn/ORM_WARN-2020-06-23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/TestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/MyBatisListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/aspect/HelloAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/service/HelloService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/service/HelloServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/src/main/resources/listener.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/src/test/java/TestS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/logs/debug/ORM_DEBUG-2020-06-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/logs/error/ORM_ERROR-2020-06-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/logs/info/ORM_INFO-2020-06-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/logs/warn/ORM_WARN-2020-06-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/DruidConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/DruidConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/TestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/MyBatisListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/MyBatisListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/core/DefaultExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/core/DefaultExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/test/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/test/AccountDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/test/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/test/AccountServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/resources/listener.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/resources/listener" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/test/java/MapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/DruidConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/DruidConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/TestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/TestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/MyBatisListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/MyBatisListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/core/DefaultExecutor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/core/DefaultExecutor$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/core/DefaultExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/core/DefaultExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/test/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/test/AccountDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/test/AccountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/edu/gdpu/myssm/mybatis/test/AccountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/listener.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/mybatis-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/surefire-reports/MapperTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/surefire-reports/TEST-MapperTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/test-classes/MapperTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/AnnotationHandlerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/AnnotationHandlerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/ApplicationInitializerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ApplicationInitializerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/DefaultBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/ProxyBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ProxyBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/AnnotationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/AnnotationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/ApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/ApplicationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ApplicationListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/ApplicationListenerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ApplicationListenerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/BootLogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/BootLogo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/ListenerStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ListenerStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/Aspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/Aspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/AutoWired.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/AutoWired.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/Bean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/UseAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/UseAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/annotation/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/annotation/Value.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/aop/Advice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/aop/Advice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/aop/JoinPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/aop/JoinPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/aop/Signature.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/aop/Signature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/exception/KeyExistedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/exception/KeyExistedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/exception/ParseExpressionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/exception/ParseExpressionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/exception/UnImplementedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/exception/UnImplementedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/exception/UnsupportedTypesException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/exception/UnsupportedTypesException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/AspectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/AspectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/AutoWiredHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/AutoWiredHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/BeanHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/BeanHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/ComponentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ComponentHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/ConfigurationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ConfigurationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/ControllerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ControllerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/RepositoryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/RepositoryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/ResourceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ResourceHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/ServiceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ServiceHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/UseAspectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/UseAspectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/handler/ValueHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ValueHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/BeanUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/ExpressionParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/FileUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/PackageScanUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/PropertiesUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/ReflectUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/ResourceUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/handlers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/resources/handlers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/listener.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/resources/listener.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/AnnotationHandlerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/AnnotationHandlerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ApplicationInitializerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ApplicationInitializerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ListenerStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ListenerStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/AutoWiredHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/AutoWiredHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ConfigurationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ConfigurationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ValueHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/handler/ValueHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/BeanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/PackageScanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/utils/PackageScanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/handlers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/resources/listener.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/src/test/java/edu/gdpu/test/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/test/java/edu/gdpu/test/ApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/test/java/edu/gdpu/test/ExpressionParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/test/java/edu/gdpu/test/ExpressionParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/test/java/edu/gdpu/test/ResourceUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/src/test/java/edu/gdpu/test/ResourceUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/META-INF/services/javax.servlet.ServletContainerInitializer" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/META-INF/services/javax.servlet.ServletContainerInitializer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/AnnotationHandlerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/ApplicationInitializerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/BeanFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/ProxyBeanFactory$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/ProxyBeanFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/AnnotationHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/ApplicationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/ApplicationInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/ApplicationListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/ApplicationListenerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/BootLogo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/ListenerStarter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/ServletInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/Aspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/AutoWired.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/Bean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/Component.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/Configuration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/Repository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/Resource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/UseAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/annotation/Value.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/aop/Advice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/aop/JoinPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/aop/Signature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/exception/KeyExistedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/exception/ParseExpressionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/exception/UnImplementedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/exception/UnsupportedTypesException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/AspectHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/AutoWiredHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/BeanHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/ComponentHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/ConfigurationHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/ControllerHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/RepositoryHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/ResourceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/ServiceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/UseAspectHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/handler/ValueHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/AnnotationHandlerFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/AnnotationHandlerFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/ApplicationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/ApplicationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/ApplicationInitializerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/ApplicationInitializerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/ListenerStarter.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/ListenerStarter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/handler/AutoWiredHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/handler/AutoWiredHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/handler/ConfigurationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/spring/handler/ConfigurationHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/BeanUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/BeanUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/ExpressionParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/ExpressionParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/FileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/FileUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/PackageScanUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/PackageScanUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/PropertiesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/PropertiesUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/ResourceUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/edu/gdpu/myssm/utils/ResourceUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/handlers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/handlers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/classes/listener.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/classes/listener.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/handlers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/classes/listener.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/target/spring-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/surefire-reports/TEST-edu.gdpu.test.ExpressionParserTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/surefire-reports/TEST-edu.gdpu.test.ResourceUtilsTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/surefire-reports/edu.gdpu.test.ExpressionParserTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/surefire-reports/edu.gdpu.test.ResourceUtilsTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/surefire-reports/edu.gdpu.test.ExpressionParserTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/surefire-reports/edu.gdpu.test.ExpressionParserTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/target/surefire-reports/edu.gdpu.test.ResourceUtilsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/surefire-reports/edu.gdpu.test.ResourceUtilsTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring/target/test-classes/edu/gdpu/test/ApplicationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/test-classes/edu/gdpu/test/ApplicationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/test-classes/edu/gdpu/test/ExpressionParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/test-classes/edu/gdpu/test/ExpressionParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/target/test-classes/edu/gdpu/test/ResourceUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/target/test-classes/edu/gdpu/test/ResourceUtilsTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,9 +107,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -194,6 +138,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -207,20 +152,23 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MySSM" />
-      <recent name="D:\MySSM\mybatis\src\main\resources" />
-      <recent name="D:\MySSM\myspring" />
-      <recent name="D:\MySSM\myspring\src" />
-      <recent name="D:\MySSM\src\main\resources" />
+      <recent name="D:\MySSM\spring\src\main\resources" />
+      <recent name="D:\MySSM\springMVC\src\main\resources\templates" />
+      <recent name="D:\MySSM\springMVC\src\main\resources" />
+      <recent name="D:\MySSM\test\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="edu.gdpu.myssm.annotation" />
       <recent name="edu.gdpu.myssm.utils" />
       <recent name="edu.gdpu.myssm.handler" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MySSM\springMVC\src\main\resources\META-INF" />
+      <recent name="D:\MySSM\mybatis\src\main\resources\META-INF" />
+      <recent name="D:\MySSM\spring\src\main\resources\META-INF" />
+      <recent name="D:\MySSM\spring\target" />
       <recent name="D:\MySSM\myspring" />
-      <recent name="D:\MySSM\src\main\resources" />
-      <recent name="D:\MySSM\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -235,26 +183,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestApplication">
-    <configuration name="SqlExpressionParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.gdpu.myssm.utils.SqlExpressionParser" />
-      <module name="mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.gdpu.myssm.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TestApplication (2)">
+    <configuration name="TestApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.gdpu.TestApplication" />
-      <module name="mybatis" />
+      <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.gdpu.myssm.spring.*" />
+          <option name="PATTERN" value="edu.gdpu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -262,42 +197,109 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapperTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="TestApplication (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.gdpu.myssm.TestApplication" />
+      <module name="springMVC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gdpu.myssm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapperTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
+    <configuration name="ApplicationTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springMVC" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapperTest" />
+      <option name="MAIN_CLASS_NAME" value="ApplicationTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestS.testInject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestS" />
-      <option name="METHOD_NAME" value="testInject" />
+    <configuration name="ApplicationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gdpu.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.gdpu.test" />
+      <option name="MAIN_CLASS_NAME" value="edu.gdpu.test.ApplicationTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestApplication.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springMVC" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestApplication" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="test" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestApplication" />
-        <item itemvalue="JUnit.MapperTest.test" />
-        <item itemvalue="JUnit.MapperTest" />
-        <item itemvalue="Application.SqlExpressionParser" />
-        <item itemvalue="JUnit.TestS.testInject" />
+        <item itemvalue="Application.TestApplication (2)" />
+        <item itemvalue="Application.TestApplication (1)" />
+        <item itemvalue="JUnit.ApplicationTest.test (1)" />
+        <item itemvalue="JUnit.ApplicationTest.test" />
+        <item itemvalue="JUnit.TestApplication.test" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +320,11 @@
       <workItem from="1592897743645" duration="43596000" />
       <workItem from="1593248622860" duration="3976000" />
       <workItem from="1593427127498" duration="2901000" />
-      <workItem from="1593440278258" duration="10511000" />
+      <workItem from="1593440278258" duration="28463000" />
+      <workItem from="1593689799646" duration="63091000" />
+      <workItem from="1594028594125" duration="445000" />
+      <workItem from="1594029137758" duration="11544000" />
+      <workItem from="1594040822613" duration="4807000" />
     </task>
     <servers />
   </component>
@@ -343,18 +349,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/core/DefaultExecutor.java</url>
-          <line>115</line>
+          <line>120</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/aop/TransactionAspect.java</url>
           <line>43</line>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/Application.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring/src/main/java/edu/gdpu/myssm/spring/ProxyBeanFactory.java</url>
@@ -370,6 +371,11 @@
           <url>file://$PROJECT_DIR$/mybatis/src/main/java/edu/gdpu/myssm/mybatis/test/AccountServiceImpl.java</url>
           <line>43</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springMVC/src/main/java/edu/gdpu/myssm/springmvc/core/HandlerFactory.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

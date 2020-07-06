@@ -11,6 +11,8 @@ Spring的IOC,AOP及简单的事务功能
 
 Mybatis(未加缓存)
 
+SpringMVC(静态资源访问，视图解析，拦截器，Controller)
+
 (大佬勿喷....)
 ## 环境依赖
 编译Jar版本:JDK8
@@ -348,6 +350,230 @@ public class MapperTest {
     }
 }
 ```
+
+### SpringMVC
+
+#### 简单的登陆注册实现Demo
+
+主启动类
+
+```java
+/**
+ * @author 嘿 林梓鸿
+ *
+ * @date 2020年 07月02日 20:09:46
+ */
+public class TestApplication {
+    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException, IOException {
+        Application.run(TestApplication.class);
+    }
+}
+```
+
+web配置类
+```java
+/**
+ * @author 嘿 林梓鸿
+ * @date 2020年 07月06日 14:46:39
+ */
+@EnableMvc
+@Configuration
+public class WebConfig extends WebConfigureSupport {
+
+    @AutoWired
+    private LoginInterceptor loginInterceptor;
+
+    @Override
+    public void resourceResolve(ResourceResolver resourceResolver) {
+        resourceResolver.addView("/login","login");
+    }
+
+    @Override
+    public void filterResolve(InterceptorRegistry interceptorRegistry) {
+        interceptorRegistry.addInterceptor(loginInterceptor).addPath("/*").addExclude("/login","/doLogin","/register");
+        interceptorRegistry.addInterceptor(new EncodingInterceptor()).addPath("/*").addExclude();
+    }
+}
+```
+
+controller
+
+```java
+/**
+ * @author 嘿 林梓鸿
+ * @date 2020年 07月06日 16:47:32
+ */
+@Controller
+public class LoginController {
+
+    @AutoWired
+    private UserService userService;
+
+    @PostMapping("/doLogin")
+    @ResponseBody
+    public String login(User user, HttpSession session){
+        User login = userService.login(user);
+        if(login!=null){
+            session.setAttribute("user",login);
+            return login.toString();
+        }else {
+            return "登陆失败";
+        }
+    }
+
+    @PostMapping("/register")
+    @ResponseBody
+    public String register(User user){
+        userService.register(user);
+        User login = userService.login(user);
+        return login.toString();
+    }
+
+    @GetMapping("/login")
+    public String loginPage(){
+        return "login";
+    }
+}
+```
+
+登陆拦截器
+```java
+/**
+ * @author 嘿 林梓鸿
+ * @date 2020年 07月06日 15:10:00
+ */
+@Component
+public class LoginInterceptor implements Interceptor {
+
+    @AutoWired
+    private ViewResolver viewResolver;
+
+    @Override
+    public void doPre(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws IOException, ServletException {
+        Object user = httpServletRequest.getSession().getAttribute("user");
+        if(user==null){
+            viewResolver.resolve("error",httpServletResponse);
+        }else {
+            filterChain.doFilter(httpServletRequest,httpServletResponse);
+        }
+    }
+
+    @Override
+    public void doAfter(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws IOException, ServletException {
+    }
+}
+```
+
+UserMapper
+
+```java
+/**
+ * @author 嘿 林梓鸿
+ */
+@Repository
+public interface UserMapper {
+
+    @Insert("insert into user(username,password) values (#{username},#{password})")
+    void insert(User user);
+
+    @Select("select * from user where id = #{id}")
+    User select(int id);
+
+    @Select("select * from user where username=#{username}")
+    User selectByUsername(String username);
+}
+```
+
+service接口及其实现类
+```java
+
+/**
+ * @author 嘿 林梓鸿
+ */
+public interface UserService {
+
+    void register(User user);
+
+    User login(User user);
+}
+
+/**
+ * @author 嘿 林梓鸿
+ * @date 2020年 07月06日 16:45:40
+ */
+@Service
+public class UserServiceImpl implements UserService {
+
+    @AutoWired
+    private UserMapper userMapper;
+
+    @Override
+    public void register(User user) {
+        userMapper.insert(user);
+    }
+
+    @Override
+    public User login(User user) {
+        User select = userMapper.selectByUsername(user.getUsername());
+        if(select==null){
+            return null;
+        }
+        if(select.getPassword().equals(user.getPassword())){
+            return select;
+        }
+        return null;
+    }
+}
+```
+
+User类
+
+```java
+/**
+ * @author 嘿 林梓鸿
+ * @date 2020年 07月06日 16:41:49
+ */
+public class User {
+    private Integer id;
+    private String username;
+    private String password;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+}
+```
+
+具体源码及其可执行Jar是testmyssm那个jar可自行下载
 
 
 

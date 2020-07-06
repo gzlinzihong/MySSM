@@ -67,6 +67,7 @@ public class DefaultExecutor implements Executor {
     @SuppressWarnings("unchecked")
     public Object execute(Method method,Object[] args) throws SQLException {
         MethodMapper methodMapper = methods.get(method);
+        Class<?> returnType = method.getReturnType();
         String sql = methodMapper.getSql().replaceAll("#\\{[a-z0-9A-Z\\.]+}", "?");
         List<String> parse = SqlExpressionParser.parse(methodMapper.getSql());
         List<Object> sqlArgs = new ArrayList<>();
@@ -97,7 +98,11 @@ public class DefaultExecutor implements Executor {
                 return pre.executeUpdate();
             case SELECT:
                 try {
-                    return selectList(methodMapper.getSignature(),pre);
+                    if(returnType.isAssignableFrom(List.class)){
+                        return selectList(methodMapper.getSignature(),pre);
+                    }else {
+                        return selectOne(returnType,pre);
+                    }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -128,5 +133,19 @@ public class DefaultExecutor implements Executor {
             list.add(o);
         }
         return list;
+    }
+
+    public <T> T selectOne(Class c,PreparedStatement pre) throws Exception{
+        ResultSet resultSet = pre.executeQuery();
+        while (resultSet.next()){
+            Object o = c.getDeclaredConstructor().newInstance();
+            Field[] fields = o.getClass().getDeclaredFields();
+            for(Field field:fields){
+                field.setAccessible(true);
+                field.set(o,resultSet.getObject(field.getName()));
+            }
+            return (T) o;
+        }
+        return null;
     }
 }

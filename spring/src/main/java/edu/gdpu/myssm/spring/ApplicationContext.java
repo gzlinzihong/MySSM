@@ -2,6 +2,7 @@ package edu.gdpu.myssm.spring;
 
 import edu.gdpu.myssm.utils.BeanUtils;
 
+import javax.servlet.ServletContext;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
@@ -12,7 +13,10 @@ import java.util.concurrent.TimeUnit;
  */
 public class ApplicationContext {
 
+
     private static volatile ApplicationContext applicationContext ;
+
+    private ServletContext servletContext;
 
     private Map<String,Object> beans = new ConcurrentHashMap<>();
 
@@ -20,6 +24,15 @@ public class ApplicationContext {
 
     private ApplicationContext(){
 
+    }
+
+    public void setServletContext(ServletContext servletContext) {
+        this.servletContext = servletContext;
+        BeanUtils.putBean("servletContext",servletContext);
+    }
+
+    public ServletContext getServletContext() {
+        return servletContext;
     }
 
     public Map<String, Object> getBeans() {

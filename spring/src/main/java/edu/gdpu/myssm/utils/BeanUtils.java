@@ -4,6 +4,7 @@ import edu.gdpu.myssm.spring.ApplicationContext;
 import edu.gdpu.myssm.spring.InterfaceObject;
 import edu.gdpu.myssm.spring.exception.KeyExistedException;
 
+import javax.servlet.ServletContext;
 import java.util.Map;
 
 /**
@@ -22,11 +23,19 @@ public class BeanUtils {
                 } catch (KeyExistedException e) {
                     e.printStackTrace();
                 }
+            }else {
+                InterfaceObject interfaceObject = (InterfaceObject) beans.get(key);
+                mapping.put(interfaceObject.getaClass(),key);
+                return beans.put(key,value);
             }
         }else {
             mapping.put(value.getClass(),key);
+            if(value instanceof ServletContext){
+                mapping.put(ServletContext.class,key);
+            }
             return beans.put(key,value);
         }
+        mapping.put(value.getClass(),key);
         return beans.put(key,value);
     }
 }

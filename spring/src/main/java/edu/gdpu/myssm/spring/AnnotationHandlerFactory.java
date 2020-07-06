@@ -1,6 +1,5 @@
 package edu.gdpu.myssm.spring;
 
-import edu.gdpu.myssm.spring.AnnotationHandler;
 import edu.gdpu.myssm.utils.ResourceUtils;
 
 import java.io.*;
@@ -17,7 +16,7 @@ public class AnnotationHandlerFactory {
     private static Map<String,AnnotationHandler> handlers = new ConcurrentHashMap<>();
 
     static {
-        List<InputStream> inputStreams = ResourceUtils.loadFiles("handlers.txt");
+        List<InputStream> inputStreams = ResourceUtils.loadFiles("handlers");
         for(InputStream ins:inputStreams){
             BufferedReader reader = new BufferedReader(new InputStreamReader(ins));
             try {
@@ -26,7 +25,9 @@ public class AnnotationHandlerFactory {
                     Class<?> aClass = Class.forName(s);
                     AnnotationHandler o = (AnnotationHandler) aClass.getDeclaredConstructor().newInstance();
                     String[] split = s.split("\\.");
-                    handlers.put(split[split.length-1],o);
+                    if(!handlers.containsKey(split[split.length-1])){
+                        handlers.put(split[split.length-1],o);
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();

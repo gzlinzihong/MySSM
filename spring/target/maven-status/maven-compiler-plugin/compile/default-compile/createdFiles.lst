@@ -31,6 +31,7 @@ edu\gdpu\myssm\spring\ApplicationContext.class
 edu\gdpu\myssm\spring\ApplicationListenerImpl.class
 edu\gdpu\myssm\spring\InterfaceObject.class
 edu\gdpu\myssm\spring\exception\ParseExpressionException.class
+edu\gdpu\myssm\spring\TomcatConfig.class
 edu\gdpu\myssm\spring\aop\Signature.class
 edu\gdpu\myssm\spring\annotation\Aspect.class
 edu\gdpu\myssm\spring\annotation\Repository.class

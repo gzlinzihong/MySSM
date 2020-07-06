@@ -22,6 +22,7 @@ D:\MySSM\spring\src\main\java\edu\gdpu\myssm\spring\aop\Advice.java
 D:\MySSM\spring\src\main\java\edu\gdpu\myssm\spring\handler\AutoWiredHandler.java
 D:\MySSM\spring\src\main\java\edu\gdpu\myssm\spring\AnnotationHandlerFactory.java
 D:\MySSM\spring\src\main\java\edu\gdpu\myssm\spring\ApplicationInitializerImpl.java
+D:\MySSM\spring\src\main\java\edu\gdpu\myssm\spring\TomcatConfig.java
 D:\MySSM\spring\src\main\java\edu\gdpu\myssm\spring\annotation\Value.java
 D:\MySSM\spring\src\main\java\edu\gdpu\myssm\spring\AnnotationHandler.java
 D:\MySSM\spring\src\main\java\edu\gdpu\myssm\utils\FileUtils.java

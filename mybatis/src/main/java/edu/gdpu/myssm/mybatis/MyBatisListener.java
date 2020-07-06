@@ -30,14 +30,13 @@ public class MyBatisListener implements ApplicationListener {
     @Override
     public void completeScan() {
         DaoConfiguration config = null;
-        MapperScanConfig bean = null;
         try {
             config = ApplicationContext.getApplicationContext().getBean(DaoConfiguration.class);
-            bean = ApplicationContext.getApplicationContext().getBean(MapperScanConfig.class);
         }catch (NullPointerException e){
             logger.warn("Can't get MapperScanConfig or DaoConfiguration from IOC");
             return;
         }
+        MapperScanConfig bean = config.getMapperScanConfig();
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
         SqlSessionFactory sqlSessionFactory = builder.build(config);
         SqlSession sqlSession = sqlSessionFactory.openSqlSession();

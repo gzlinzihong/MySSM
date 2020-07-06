@@ -1,6 +1,5 @@
 package edu.gdpu.myssm.spring;
 
-import edu.gdpu.myssm.spring.ApplicationListener;
 import edu.gdpu.myssm.utils.ResourceUtils;
 
 import java.io.BufferedReader;
@@ -18,7 +17,7 @@ public class ListenerStarter implements ApplicationListener {
     private static List<ApplicationListener> listeners = new ArrayList<>();
 
     static {
-        List<InputStream> inputStreams = ResourceUtils.loadFiles("listener.txt");
+        List<InputStream> inputStreams = ResourceUtils.loadFiles("listener");
         for(InputStream ins:inputStreams){
             BufferedReader reader = new BufferedReader(new InputStreamReader(ins));
             try {

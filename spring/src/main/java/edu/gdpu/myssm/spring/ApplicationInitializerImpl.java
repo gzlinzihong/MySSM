@@ -13,5 +13,6 @@ import javax.servlet.ServletException;
 public class ApplicationInitializerImpl implements ApplicationInitializer {
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
+        ApplicationContext.getApplicationContext().setServletContext(servletContext);
     }
 }

@@ -4,6 +4,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import edu.gdpu.myssm.mybatis.config.DaoConfiguration;
 import edu.gdpu.myssm.mybatis.config.Environment;
 import edu.gdpu.myssm.mybatis.config.MapperScanConfig;
+import edu.gdpu.myssm.spring.ApplicationContext;
 import edu.gdpu.myssm.spring.annotation.Bean;
 import edu.gdpu.myssm.spring.annotation.Configuration;
 import edu.gdpu.myssm.spring.annotation.Resource;
@@ -28,6 +29,8 @@ public class DruidConfig {
     @Value("${mysql.password}")
     private String password;
 
+    @Value("${mybatis.mapperPackage}")
+    private String pkg;
     /**
      * 要扫描的包
      * @return
@@ -35,7 +38,7 @@ public class DruidConfig {
     @Bean
     public MapperScanConfig mapperScanConfig(){
         MapperScanConfig mapperScanConfig = new MapperScanConfig();
-        mapperScanConfig.setPackageName("edu.gdpu.myssm.mybatis.test");
+        mapperScanConfig.setPackageName(pkg);
         return mapperScanConfig;
     }
 

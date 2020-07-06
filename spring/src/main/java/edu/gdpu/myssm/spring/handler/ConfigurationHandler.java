@@ -31,7 +31,6 @@ public class ConfigurationHandler implements AnnotationHandler {
 
 
     private Object register(Class cl){
-        Map<String, Object> beans = ApplicationContext.getApplicationContext().getBeans();
         Configuration annotation = (Configuration)cl.getAnnotation(Configuration.class);
         Object o = null;
         try {
@@ -86,6 +85,9 @@ public class ConfigurationHandler implements AnnotationHandler {
                 Object result = valueHandler.handle(field);
                 if(result!=null){
                     key = (String)result;
+                    if(prop.getProperty(key)==null){
+                        continue;
+                    }
                     Class<?> type = field.getType();
                     Object value = this.switchType(prop, type.getSimpleName(), key);
                     field.set(o,value);

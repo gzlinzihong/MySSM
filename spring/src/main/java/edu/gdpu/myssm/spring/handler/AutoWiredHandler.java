@@ -13,6 +13,7 @@ import java.util.Map;
  */
 public class AutoWiredHandler implements AnnotationHandler {
 
+
     private Object invoker;
 
     public void setInvoker(Object invoker) {
@@ -31,14 +32,26 @@ public class AutoWiredHandler implements AnnotationHandler {
     }
 
     private void inject(Field field){
-        Map<String, Object> beans = ApplicationContext.getApplicationContext().getBeans();
+        ApplicationContext applicationContext = ApplicationContext.getApplicationContext();
+        Map<String, Object> beans = applicationContext.getBeans();
         field.setAccessible(true);
         AutoWired autoWired = field.getAnnotation(AutoWired.class);
         try {
-            if(autoWired.value().equals("")){
-                field.set(invoker,beans.get(field.getName().toLowerCase()));
-            }else {
-                field.set(invoker,beans.get(autoWired.value()));
+            Object bean = null;
+            try {
+                 bean = applicationContext.getBean(field.getType());
+            }catch (NullPointerException e){
+
+            }
+            if(bean!=null){
+                field.set(invoker,bean);
+            } else {
+                //尝试类型匹配
+                if(autoWired.value().equals("")){
+                    field.set(invoker,beans.get(field.getName().toLowerCase()));
+                }else {
+                    field.set(invoker,beans.get(autoWired.value()));
+                }
             }
         } catch (IllegalAccessException e) {
             e.printStackTrace();

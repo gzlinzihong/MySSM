@@ -14,6 +14,16 @@ Mybatis(未加缓存)
 SpringMVC(静态资源访问，视图解析，拦截器，Controller)
 
 (大佬勿喷....)
+
+
+**最新更新**
+
+Java老师不让我用这个交实训。一定要求我写个系统。web也不给用
+
+说要练纯JavaSE的内容
+
+哥们无fuck可说
+
 ## 环境依赖
 编译Jar版本:JDK8
 
@@ -257,13 +267,13 @@ public class AccountServiceImpl implements AccountService {
 仅支持位于类上的注解
 
 1. 自定义处理器 命名格式为 注解名+Handler并实现AnnotationHandler接口
-2. 在resource目录下建立handlers.txt文件。添加处理器全类名即可
+2. 在resource目录下建立handlers文件。添加处理器全类名即可
 3. 传入的Object 强转为Class对象即可
 
 #### 如何自定义监听器
 
 1. 自定义监听器 实现ApplicationListener接口
-2. 在resource目录下建立listener.txt。添加监听器全类名
+2. 在resource目录下建立listener文件。添加监听器全类名
 
 ### mybatis
 
@@ -287,6 +297,8 @@ public class DruidConfig {
     @Value("${mysql.password}")
     private String password;
 
+    @Value("${mybatis.mapperPackage}")
+    private String pkg;
     /**
      * 要扫描的包
      * @return
@@ -294,7 +306,7 @@ public class DruidConfig {
     @Bean
     public MapperScanConfig mapperScanConfig(){
         MapperScanConfig mapperScanConfig = new MapperScanConfig();
-        mapperScanConfig.setPackageName("edu.gdpu.myssm.mybatis.test");
+        mapperScanConfig.setPackageName(pkg);
         return mapperScanConfig;
     }
 
@@ -317,6 +329,7 @@ public class DruidConfig {
         dataSource.setPassword(password);
         return dataSource;
     }
+
 }
 ```
 
@@ -343,6 +356,8 @@ public interface AccountDao {
     int delete(int id);
 }
 ```
+
+上述demo已内置，指定DataSource直接在application.properties中指定即可
 
 #### 单元测试获取代理对象Demo
 
